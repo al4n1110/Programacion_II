@@ -16,7 +16,7 @@ class Cola:
             elemento = self.__arreglo[self.__inicio]
             return elemento
     def peek(self):
-        return self.__arreglo[self.__fin]
+        return self.__arreglo[self.__inicio+1]
     def isEmpty(self):
         return self.__inicio == self.__fin
     def isFull(self):
@@ -28,7 +28,7 @@ class Cola:
             return self.__fin+1
 #Main
 cola1 = Cola(6)
-cola1.insert(34)
+cola1.insert(64)
 cola1.insert(20)
 cola1.insert(44)
 cola1.insert(10)

@@ -28,7 +28,7 @@ public class Cola {
         }
     }
     public long peek(){
-        return this.arreglo[this.fin];
+        return this.arreglo[this.inicio+1];
     }
     public boolean isEmpty(){
         return this.inicio == this.fin;
