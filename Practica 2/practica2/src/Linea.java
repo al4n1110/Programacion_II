@@ -3,8 +3,8 @@ import java.awt.Graphics2D;
 import java.awt.geom.Line2D;
 
 public class Linea {
-    Punto p1;
-    Punto p2;
+    public Punto p1;
+    public Punto p2;
     public Linea(Punto p1, Punto p2){
         this.p1 = p1;
         this.p2 = p2;

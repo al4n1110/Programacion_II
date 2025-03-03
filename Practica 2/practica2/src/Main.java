@@ -14,8 +14,8 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
 
-        Punto p1 = new Punto(360, (float) 70.5);
-        Punto p2 = new Punto(550, 400);
+        Punto p1 = new Punto(000, 000);
+        Punto p2 = new Punto(500, 500);
         Linea linea = new Linea(p1, p2);
 
         System.out.println("---LINEA");

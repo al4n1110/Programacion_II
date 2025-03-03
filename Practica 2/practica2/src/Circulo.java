@@ -1,8 +1,8 @@
 import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
 public class Circulo {
-    Punto centro;
-    float radio;
+    public Punto centro;
+    public float radio;
     public Circulo(Punto centro , float radio){
         this.centro = centro;
         this.radio = radio;
