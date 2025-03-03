@@ -18,13 +18,17 @@ public class Cola {
         }
     }
     public long remove(){
-        if(!isEmpty()){
-            this.inicio++;
-            long elemento = this.arreglo[this.inicio];
-            return elemento;
-        }else{
+        if(this.isEmpty()){
             System.out.println("Cola vacia");
             return -1;
+        }else{
+            this.inicio++;
+            long elemento = this.arreglo[this.inicio];
+            if(this.isFull()){
+                this.inicio = -1;
+                this.fin = -1;
+            }
+            return elemento;
         }
     }
     public long peek(){
@@ -37,13 +41,7 @@ public class Cola {
         return this.fin == this.n-1;
     }
     public int size(){
-        if(!isEmpty()){
-            this.fin++;
-            return this.fin;
-        }else{
-            System.out.println("Cola vacia");
-            return -1;
-        }
+        return this.n;
     }
     
 }

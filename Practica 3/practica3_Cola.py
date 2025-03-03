@@ -11,9 +11,15 @@ class Cola:
         else:
             print("Cola llena")
     def remove(self):
-        if not self.isEmpty():
-            self.__inicio +=1
+        if self.isEmpty():
+            print("Cola vacia")
+            return -1
+        else:
+            self.__inicio += 1;
             elemento = self.__arreglo[self.__inicio]
+            if self.isFull():
+                self.__inicio = -1
+                self.__fin = -1
             return elemento
     def peek(self):
         return self.__arreglo[self.__inicio+1]
@@ -22,10 +28,7 @@ class Cola:
     def isFull(self):
         return self.__fin == self.__n-1
     def size(self):
-        if self.isEmpty():
-            return "Pila vacia"
-        else :
-            return self.__fin+1
+        return self.__n
 #Main
 cola1 = Cola(6)
 cola1.insert(64)
