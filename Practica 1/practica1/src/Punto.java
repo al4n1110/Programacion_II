@@ -1,8 +1,8 @@
 import java.text.DecimalFormat;
 
 public class Punto {
-    float x;
-    float y;
+    public float x;
+    public float y;
     public Punto(float x, float y) {
         this.x = x;
         this.y = y;
