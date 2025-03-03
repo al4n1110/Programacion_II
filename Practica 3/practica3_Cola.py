@@ -28,14 +28,13 @@ class Cola:
     def isFull(self):
         return self.__fin == self.__n-1
     def size(self):
-        return self.__n
+        return self.__fin+1
 #Main
-cola1 = Cola(6)
+cola1 = Cola(5)
 cola1.insert(64)
 cola1.insert(20)
 cola1.insert(44)
 cola1.insert(10)
-cola1.insert(30)
 print(cola1.peek())
 print(cola1.isEmpty())
 print(cola1.isFull())

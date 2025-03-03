@@ -41,7 +41,7 @@ public class Cola {
         return this.fin == this.n-1;
     }
     public int size(){
-        return this.n;
+        return this.fin+1;
     }
     
 }
