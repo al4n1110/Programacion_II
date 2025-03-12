@@ -13,10 +13,15 @@ public class FiguraGeometrica {
     }
     //Area de un trapecio
     public double area(double base_M , double base_m, double altura){
-        return ((base_M + base_m)*altura)/2;
+        return (base_M + base_m)*altura/2;
     }
     //Area de un pentagono
-    public double area(float Perimetro , double apotema){
-        return (Perimetro * apotema)/2;
+    public double area(float Perimetro , double apotema, String tipo){
+        if(tipo == "pentagono"){
+            return (Perimetro * apotema)/2;
+        }
+        else{
+            return -1;
+        }
     }
 }
