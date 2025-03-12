@@ -1,14 +1,15 @@
-public class FiguraGeometrica {
+public class FiguraGeometrica{
+
     //Area de un circulo
     public double area(double radio){
-        return (Math.PI * (Math.pow(radio, 2)));
+        return Math.PI * (Math.pow(radio, 2));
     }
     //Area de un rectangulo
     public double area(double base , double altura){
         return base * altura;
     }
     //Area de un Triangulko rectangulo
-    public double area(double base , float altura){
+    public double area(float base , float altura){
         return (base * altura)/2;
     }
     //Area de un trapecio
@@ -17,11 +18,6 @@ public class FiguraGeometrica {
     }
     //Area de un pentagono
     public double area(float Perimetro , double apotema, String tipo){
-        if(tipo == "pentagono"){
             return (Perimetro * apotema)/2;
-        }
-        else{
-            return -1;
-        }
     }
 }
