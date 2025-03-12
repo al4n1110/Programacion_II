@@ -8,7 +8,7 @@ public class App {
         System.out.println("Area del circulo:" +f1.area(25));
         System.out.println("Area del rectangulo:" +f2.area(15.5 , 20));
         System.out.println("Area de triangulo rectangulo:" +f3.area(25.6 , 12.7));
-        System.out.println("Area de trapecio:" +f4.area(0));
-        System.out.println("Area del pentagono:" +f5.area(0));
+      System.out.println("Area de trapecio:" +f4.area(30.4,20,15));
+        System.out.println("Area del pentagono:" +f5.area(50,12.5));
     }
 }
