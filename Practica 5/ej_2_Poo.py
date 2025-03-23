@@ -20,7 +20,6 @@ numeros = []
 for i in range(10):
     num = float(input(f"Ingrese un numero ({i+1}/10):"))
     numeros.append(num)
-
 #Instanciando el objeto Estadistica
 estadistica1 = Estadistica(numeros)
 print(f"El promedio es: {estadistica1.promedio():.2f}")
