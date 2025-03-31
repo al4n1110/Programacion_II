@@ -1,4 +1,4 @@
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
         AlgebraVectorial av = new AlgebraVectorial();
         AlgebraVectorial av2 = new AlgebraVectorial(new double[]{1, 0, 0}, new double[]{0, 1, 0});

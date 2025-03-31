@@ -1,5 +1,4 @@
 public class AlgebraVectorial {
-    Scanner sc = new Scanner(System.in);
     private double[] vecA;
     private double[] vecB;
 
